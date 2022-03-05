@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Header from '../components/Header/Header';
 
 const Home: NextPage = () => {
 	return (
@@ -7,9 +8,7 @@ const Home: NextPage = () => {
 			<Head>
 				<title>Forever Baby</title>
 			</Head>
-			<div>
-				<h1>Forever Baby</h1>
-			</div>
+			<Header />
 		</>
 	);
 };
