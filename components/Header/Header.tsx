@@ -1,10 +1,9 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 
 const Header: NextPage = () => {
 	return (
 		<>
-			<header>
+			<header className='flex justify-around items-center w-full h-32'>
 				<div>Logo</div>
 				<div>Search</div>
 				<div>Minha Conta</div>
