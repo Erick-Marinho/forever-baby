@@ -1,5 +1,8 @@
-import type { NextPage } from 'next';
+import React from 'react';
+
 import Image from 'next/image';
+import carrinho from '../../assets/carrinho.png';
+
 // import logo from '../../assets/logoForeverBaby.png';
 
 type Props = {
@@ -8,19 +11,21 @@ type Props = {
 	price: string;
 };
 const Card = ({ img, text, price }: Props) => {
-	console.log(text);
 	return (
-		<div className='w-[256px] h-[387px] shadow bg-[#FFFFFF]'>
+		<div className='flex items-center w-[256px] h-[387px] shadow bg-[#FFFFFF]'>
 			<div className='p-4 rounded'>
 				<div className='w-full h-[190px]'>
 					<Image src={img} alt='logo' />
 				</div>
-				<h2 className='mt-4 text-lg'>{text}</h2>
-				<ul className='flex items-center'>
+				<h2 className='mt-4 text-[14px] text-[#345C7D] pb-2'>
+					<b>{text}</b>
+				</h2>
+				<h4 className='text-xl font-bold text-[#BF6B84] pb-4'>{price}</h4>
+				<ul className='flex justify-center pb-4'>
 					<li>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='w-4 h-4 text-yellow-300 fill-current hover:text-yellow-400'
+							className='w-6 h-6 text-[#FFE600] fill-current hover:text-yellow-400'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'>
@@ -35,7 +40,7 @@ const Card = ({ img, text, price }: Props) => {
 					<li>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='w-4 h-4 text-yellow-300 fill-current hover:text-yellow-400'
+							className='w-6 h-6 text-[#FFE600] fill-current hover:text-yellow-400'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'>
@@ -50,7 +55,7 @@ const Card = ({ img, text, price }: Props) => {
 					<li>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='w-4 h-4 text-yellow-300 fill-current hover:text-yellow-400'
+							className='w-6 h-6 text-[#FFE600] fill-current hover:text-yellow-400'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'>
@@ -65,7 +70,7 @@ const Card = ({ img, text, price }: Props) => {
 					<li>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='w-4 h-4 text-yellow-300 fill-current hover:text-yellow-400'
+							className='w-6 h-6 text-[#FFE600] fill-current hover:text-yellow-400'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'>
@@ -80,7 +85,7 @@ const Card = ({ img, text, price }: Props) => {
 					<li>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='w-4 h-4 text-yellow-300'
+							className='w-6 h-6 text-[#FFE600]'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'>
@@ -93,10 +98,11 @@ const Card = ({ img, text, price }: Props) => {
 						</svg>
 					</li>
 				</ul>
-				<h4 className='text-xl font-bold text-red-600'>{price}</h4>
-				<button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-[12px]'>
-					ADICIONAR AO CARRINHO
-				</button>
+				<div className='flex justify-center'>
+					<button className='flex text-white font-bold py-2 px-4 rounded text-[12px] bg-[#FF8A00]'>
+						ADICIONAR AO CARRINHO
+					</button>
+				</div>
 			</div>
 		</div>
 	);

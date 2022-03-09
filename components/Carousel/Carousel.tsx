@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Slider from 'react-slick';
+import Image from 'next/image';
+import logo from '../../assets/logoForeverBaby.png';
+import imagem2 from '../../assets/imagem2.jpeg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -10,23 +13,24 @@ const Carousel: NextPage = () => {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		arrows: false,
 	};
 
 	return (
 		<>
-			<div className='w-full h-96 bg-[#FFFFFF]'>
+			<div className='bg-[#FFFFFF]'>
 				<Slider {...settings}>
-					<div>
-						<h3>1</h3>
+					<div className='w-screen h-96'>
+						<Image src={logo} alt='imagens' />
 					</div>
-					<div>
-						<h3>2</h3>
+					<div className='w-screen h-96'>
+						<Image src={logo} alt='imagens' />
 					</div>
-					<div>
-						<h3>3</h3>
+					<div className='w-screen h-96'>
+						<Image src={logo} alt='imagens' />
 					</div>
-					<div>
-						<h3>4</h3>
+					<div className='w-screen h-96'>
+						<Image src={logo} alt='imagens' />
 					</div>
 				</Slider>
 			</div>

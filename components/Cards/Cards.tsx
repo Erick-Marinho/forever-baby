@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Card from '../Card/Card';
 import logo from '../../assets/logoForeverBaby.png';
+import React from 'react';
 
 interface Elements {
 	img: StaticImageData;
@@ -32,8 +33,8 @@ const elements: Elements | Elements[] = [
 ];
 const Cards: NextPage = () => {
 	return (
-		<>
-			{elements.map((item, index: number): any => {
+		<div className='flex w-full justify-evenly pb-14'>
+			{elements.map((item: Elements, index: number): React.ReactElement => {
 				return (
 					<Card
 						key={index}
@@ -43,7 +44,7 @@ const Cards: NextPage = () => {
 					/>
 				);
 			})}
-		</>
+		</div>
 	);
 };
 
