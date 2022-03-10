@@ -19,13 +19,9 @@ const Home: NextPage = () => {
 			<Menu />
 			<Carousel />
 			<Title />
-			<div className='flex'>
-				<Cards />
-			</div>
+			<Cards />
 			<Title />
-			<div className='flex'>
-				<Cards />
-			</div>
+			<Cards />
 			<Newsletter />
 			<Footer />
 			<Copyright />

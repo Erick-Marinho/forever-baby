@@ -1,9 +1,6 @@
 import React from 'react';
-
 import Image from 'next/image';
-import carrinho from '../../assets/carrinho.png';
-
-// import logo from '../../assets/logoForeverBaby.png';
+import Link from 'next/link';
 
 type Props = {
 	img: StaticImageData;
@@ -14,12 +11,16 @@ const Card = ({ img, text, price }: Props) => {
 	return (
 		<div className='flex items-center w-[256px] h-[387px] shadow bg-[#FFFFFF]'>
 			<div className='p-4 rounded'>
-				<div className='w-full h-[190px]'>
-					<Image src={img} alt='logo' />
-				</div>
-				<h2 className='mt-4 text-[14px] text-[#345C7D] pb-2'>
-					<b>{text}</b>
-				</h2>
+				<Link href='/'>
+					<a className='w-full h-[190px]'>
+						<Image src={img} alt='logo' />
+					</a>
+				</Link>
+				<Link href='a'>
+					<a className='mt-4 text-[14px] text-[#345C7D] pb-2'>
+						<b>{text}</b>
+					</a>
+				</Link>
 				<h4 className='text-xl font-bold text-[#BF6B84] pb-4'>{price}</h4>
 				<ul className='flex justify-center pb-4'>
 					<li>
@@ -109,17 +110,3 @@ const Card = ({ img, text, price }: Props) => {
 };
 
 export default Card;
-
-// const Card = (props: { text: string; price: string; img: StaticImageData }) => {
-// 	return (
-// 		<div>
-// 			<h1>{props.text}</h1>
-// 			<h1>{props.price}</h1>
-// 			<div className='w-full h-[190px]'>
-// 				<Image src={props.img} alt='logo' />
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-// export default Card;

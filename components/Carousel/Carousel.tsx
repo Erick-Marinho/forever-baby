@@ -1,8 +1,10 @@
 import type { NextPage } from 'next';
 import Slider from 'react-slick';
 import Image from 'next/image';
-import logo from '../../assets/logoForeverBaby.png';
 import imagem2 from '../../assets/imagem2.jpeg';
+import imagem3 from '../../assets/image3.jpeg';
+import imagem4 from '../../assets/image4.jpeg';
+import imagem5 from '../../assets/image5.jpeg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -14,23 +16,45 @@ const Carousel: NextPage = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
 	};
 
 	return (
 		<>
-			<div className='bg-[#FFFFFF]'>
+			<div className='bg-white'>
 				<Slider {...settings}>
-					<div className='w-screen h-96'>
-						<Image src={logo} alt='imagens' />
+					<div className='w-full h-96 relative'>
+						<Image
+							src={imagem2}
+							alt='imagens'
+							layout='fill'
+							objectFit='contain'
+						/>
 					</div>
-					<div className='w-screen h-96'>
-						<Image src={logo} alt='imagens' />
+					<div className='w-full h-96 relative'>
+						<Image
+							src={imagem3}
+							alt='imagens'
+							layout='fill'
+							objectFit='contain'
+						/>
 					</div>
-					<div className='w-screen h-96'>
-						<Image src={logo} alt='imagens' />
+					<div className='w-full h-96 relative'>
+						<Image
+							src={imagem4}
+							alt='imagens'
+							layout='fill'
+							objectFit='contain'
+						/>
 					</div>
-					<div className='w-screen h-96'>
-						<Image src={logo} alt='imagens' />
+					<div className='w-full h-96 relative'>
+						<Image
+							src={imagem5}
+							alt='imagens'
+							layout='fill'
+							objectFit='contain'
+						/>
 					</div>
 				</Slider>
 			</div>
