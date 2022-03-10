@@ -7,6 +7,10 @@ type Props = {
 	text: string;
 	price: string;
 };
+
+const addCart = () => {
+	alert('Seu produto foi adicionado ao carrinho');
+};
 const Card = ({ img, text, price }: Props) => {
 	return (
 		<div className='flex items-center w-[256px] h-[387px] shadow bg-[#FFFFFF]'>
@@ -100,7 +104,10 @@ const Card = ({ img, text, price }: Props) => {
 					</li>
 				</ul>
 				<div className='flex justify-center'>
-					<button className='flex text-white font-bold py-2 px-4 rounded text-[12px] bg-[#FF8A00]'>
+					<button
+						type='button'
+						onClick={addCart}
+						className='flex text-white font-bold py-2 px-4 rounded text-[12px] bg-[#FF8A00]'>
 						ADICIONAR AO CARRINHO
 					</button>
 				</div>

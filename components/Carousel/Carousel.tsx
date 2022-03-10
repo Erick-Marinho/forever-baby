@@ -29,7 +29,7 @@ const Carousel: NextPage = () => {
 							src={imagem2}
 							alt='imagens'
 							layout='fill'
-							objectFit='contain'
+							objectFit='cover'
 						/>
 					</div>
 					<div className='w-full h-96 relative'>
@@ -37,7 +37,7 @@ const Carousel: NextPage = () => {
 							src={imagem3}
 							alt='imagens'
 							layout='fill'
-							objectFit='contain'
+							objectFit='cover'
 						/>
 					</div>
 					<div className='w-full h-96 relative'>
@@ -45,7 +45,7 @@ const Carousel: NextPage = () => {
 							src={imagem4}
 							alt='imagens'
 							layout='fill'
-							objectFit='contain'
+							objectFit='cover'
 						/>
 					</div>
 					<div className='w-full h-96 relative'>
@@ -53,7 +53,7 @@ const Carousel: NextPage = () => {
 							src={imagem5}
 							alt='imagens'
 							layout='fill'
-							objectFit='contain'
+							objectFit='cover'
 						/>
 					</div>
 				</Slider>
