@@ -15,7 +15,11 @@ interface IFormInputs {
 
 const schema = yup
 	.object({
-		text: yup.string().min(3).required(),
+		text: yup
+			.string()
+			.min(3)
+			.matches(/^[a-zA-Z0-9]+$/, 'não enviar')
+			.required(),
 	})
 	.required();
 
