@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Menu: NextPage = () => {
 	return (
 		<>
-			<div className='flex justify-around items-center w-screen h-[50px] bg-[#F5717F]'>
+			<div className='hidden lg:flex justify-around items-center w-full h-[50px] bg-[#F5717F]'>
 				<Link href='/'>
 					<a className='text-[#FFFFFF] text-[14px]'>PERFUME INFANTIL</a>
 				</Link>

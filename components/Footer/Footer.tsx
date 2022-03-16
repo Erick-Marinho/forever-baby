@@ -9,7 +9,7 @@ import tiktok from '../../assets/tiktok.png';
 const Footer: NextPage = () => {
 	return (
 		<>
-			<div className='flex flex-col text-center w-screen h-72 bg-[#F1F1F1] pt-8'>
+			<div className='flex flex-col text-center w-full h-72 bg-[#F1F1F1] pt-8'>
 				<h2 className='text-[#345C7D]'>VISITE NOSSAS REDES SOCIAIS</h2>
 				<div className='flex justify-center pt-2 pb-4'>
 					<Link href='https://www.instagram.com/foreverliss/'>

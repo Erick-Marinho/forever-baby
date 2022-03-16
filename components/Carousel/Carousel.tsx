@@ -22,7 +22,7 @@ const Carousel: NextPage = () => {
 
 	return (
 		<>
-			<div className='bg-white'>
+			<div className='bg-white w-full'>
 				<Slider {...settings}>
 					<div className='w-full h-96 relative'>
 						<Image

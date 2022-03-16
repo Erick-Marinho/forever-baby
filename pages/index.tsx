@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Cards from '../components/Cards/Cards';
 import Carousel from '../components/Carousel/Carousel';
 import Copyright from '../components/Copyright/Copyright';
+// import Debug from '../components/debug/debug';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import Menu from '../components/Menu/Menu';

@@ -18,7 +18,7 @@ const schema = yup
 		text: yup
 			.string()
 			.min(3)
-			.matches(/^[a-zA-Z0-9]+$/, 'não enviar')
+			.matches(/^[a-zA-Z0-9]+$/, 'Não é permitido caracteres especiais')
 			.required(),
 	})
 	.required();
@@ -32,57 +32,57 @@ const Header: NextPage = () => {
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit = (data: IFormInputs) => console.log(data);
+	const onSubmit = (data: IFormInputs) => {
+		alert('Pesquisa realizada com sucesso');
+	};
 
 	return (
-		<>
-			<header className='flex justify-around items-center w-screen h-[134px]'>
-				<Link href='/'>
-					<a className='w-[160px] h-[85.54px]'>
-						<Image src={logo} alt='logo forever baby' />
-					</a>
-				</Link>
-				<form onSubmit={handleSubmit(onSubmit)}>
-					<input
-						className='w-[550px] h-[52px] italic pl-3 rounded-l-lg outline-none'
-						{...register('text')}
-						placeholder='Qual o mimo de hoje para o seu anjinho?'
-					/>
-					<button
-						type='submit'
-						className='text-[#345C7D] bg-[#FFFFFF] h-[52px] w-[100px] rounded-r-lg'>
-						BUSCAR
-					</button>
-					<p>{errors.text?.message}</p>
-				</form>
-				<div className='flex items-center'>
-					<div className=' flex flex-col items-center mr-6'>
-						<Link href='/'>
-							<a className='w-10 h-10 mx-1.5 rounded-full bg-[#F5717F]'>
-								<Image src={minhaConta} alt='minha conta' />
-							</a>
-						</Link>
-						<Link href='/'>
-							<a className='text-[10px] text-[#FFFFFF] w-[68px] h-[12px] pt-1'>
-								MINHA CONTA
-							</a>
-						</Link>
-					</div>
-					<div className=' flex flex-col items-center mr-6'>
-						<Link href='/'>
-							<a className='w-10 h-10 mx-1.5 rounded-full bg-[#F5717F]'>
-								<Image src={carrinho} alt='minha conta' />
-							</a>
-						</Link>
-						<Link href='/'>
-							<a className='text-[10px] text-[#FFFFFF] w-[68px] h-[12px] pt-1 ml-4'>
-								CARRINHO
-							</a>
-						</Link>
-					</div>
+		<header className='flex justify-around items-center h-[68px] lg:w-full lg:h-[134px]'>
+			<Link href='/'>
+				<a className='w-[84px] h-[45px] lg:w-[160px] lg:h-[85.54px]'>
+					<Image src={logo} alt='logo forever baby' />
+				</a>
+			</Link>
+			<form className='' onSubmit={handleSubmit(onSubmit)}>
+				<input
+					className='italic pl-3 rounded-l-lg outline-none w-[550px] h-[52px]'
+					{...register('text')}
+					placeholder='Qual o mimo de hoje para o seu anjinho?'
+				/>
+				<button
+					type='submit'
+					className='text-[#345C7D] bg-[#FFFFFF] font-sans font-bold rounded-r-lg h-[52px] w-[100px]'>
+					BUSCAR
+				</button>
+				<p>{errors.text?.message}</p>
+			</form>
+			<div className='flex items-center'>
+				<div className=' flex flex-col items-center mr-6'>
+					<Link href='/'>
+						<a className='w-10 h-10 mx-1.5 rounded-full bg-[#F5717F]'>
+							<Image src={minhaConta} alt='minha conta' />
+						</a>
+					</Link>
+					<Link href='/'>
+						<a className='text-[10px] text-[#FFFFFF] w-[68px] h-[12px] pt-1'>
+							MINHA CONTA
+						</a>
+					</Link>
 				</div>
-			</header>
-		</>
+				<div className=' flex flex-col items-center mr-6'>
+					<Link href='/'>
+						<a className='w-10 h-10 mx-1.5 rounded-full bg-[#F5717F]'>
+							<Image src={carrinho} alt='minha conta' />
+						</a>
+					</Link>
+					<Link href='/'>
+						<a className='text-[10px] text-[#FFFFFF] w-[68px] h-[12px] pt-1 ml-4'>
+							CARRINHO
+						</a>
+					</Link>
+				</div>
+			</div>
+		</header>
 	);
 };
 
