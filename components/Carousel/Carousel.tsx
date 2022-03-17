@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
-import Slider from 'react-slick';
 import Image from 'next/image';
-import imagem2 from '../../assets/imagem2.jpeg';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 import imagem3 from '../../assets/image3.jpeg';
 import imagem4 from '../../assets/image4.jpeg';
 import imagem5 from '../../assets/image5.jpeg';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import imagem2 from '../../assets/imagem2.jpeg';
 
 const Carousel: NextPage = () => {
 	const settings = {

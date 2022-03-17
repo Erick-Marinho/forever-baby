@@ -1,6 +1,6 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 
 type Props = {
 	img: StaticImageData;
@@ -13,11 +13,11 @@ const addCart = () => {
 };
 const Card = ({ img, text, price }: Props) => {
 	return (
-		<div className='flex items-center w-[256px] h-[387px] shadow bg-[#FFFFFF]'>
-			<div className='p-4 rounded'>
+		<div className='flex items-center w-[full] h-[387px] shadow bg-[#FFFFFF] p-2'>
+			<div className='flex flex-col lg:min-h-full rounded'>
 				<Link href='/'>
 					<a className='w-full h-[190px]'>
-						<Image src={img} alt='logo' />
+						<Image className='border-2 border-black' src={img} alt='logo' />
 					</a>
 				</Link>
 				<Link href='a'>
@@ -107,7 +107,7 @@ const Card = ({ img, text, price }: Props) => {
 					<button
 						type='button'
 						onClick={addCart}
-						className='flex text-white font-bold py-2 px-4 rounded text-[12px] bg-[#FF8A00]'>
+						className='mb-6 flex text-white font-bold rounded text-[12px] bg-[#FF8A00] lg:py-2 lg:px-4'>
 						ADICIONAR AO CARRINHO
 					</button>
 				</div>

@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import formasPagamento from '../../assets/formasPagamento.png';
 import instagram from '../../assets/instagram.png';
-import youtube from '../../assets/youtube.png';
 import tiktok from '../../assets/tiktok.png';
+import youtube from '../../assets/youtube.png';
 
 const Footer: NextPage = () => {
 	return (
@@ -33,7 +33,7 @@ const Footer: NextPage = () => {
 						</a>
 					</Link>
 				</div>
-				<div className='flex justify-evenly items-center w-full h-12 mb-6'>
+				<div className='flex flex-wrap justify-evenly items-center w-full h-12 mb-6'>
 					<Link href='/'>
 						<a className='text-[#345C7D] text-[14px]'>PERFUME INFANTIL</a>
 					</Link>
