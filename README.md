@@ -1,5 +1,5 @@
 # Desafio Forever Baby! :rocket:
-Neste repositório encontra-se a resolução para o teste prático hard skills vage web developer na empresa **Forever Liss Professional**.
+Neste repositório encontra-se a resolução para o teste prático hard skills vaga web developer na empresa **Forever Liss Professional**.
 
 # 🎯 Objetivo
 Este projeto tinha como objetivo de avaliar os conhecimentos técnicos de acordo com os seguintes:
