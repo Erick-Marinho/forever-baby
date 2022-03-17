@@ -20,7 +20,7 @@ const Card = ({ img, text, price }: Props) => {
 						<Image className='border-2 border-black' src={img} alt='logo' />
 					</a>
 				</Link>
-				<Link href='a'>
+				<Link href='/'>
 					<a className='mt-4 text-[14px] text-[#345C7D] pb-2'>
 						<b>{text}</b>
 					</a>

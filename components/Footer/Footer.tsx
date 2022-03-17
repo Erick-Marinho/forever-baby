@@ -1,10 +1,11 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import face from '../../assets/face.png';
 import formasPagamento from '../../assets/formasPagamento.png';
 import instagram from '../../assets/instagram.png';
 import tiktok from '../../assets/tiktok.png';
-import youtube from '../../assets/youtube.png';
+import yt from '../../assets/yt.png';
 
 const Footer: NextPage = () => {
 	return (
@@ -13,18 +14,18 @@ const Footer: NextPage = () => {
 				<h2 className='text-[#345C7D]'>VISITE NOSSAS REDES SOCIAIS</h2>
 				<div className='flex justify-center pt-2 pb-4'>
 					<Link href='https://www.instagram.com/foreverliss/'>
-						<a className='w-10 h-10 mx-1.5 rounded-full border-1 border-indigo-600 bg-[#f29595]'>
+						<a className='w-10 h-10 mx-1.5 rounded-full bg-[#f29595]'>
 							<Image src={instagram} alt='instagram' />
 						</a>
 					</Link>
 					<Link href='https://www.facebook.com/foreverliss'>
-						<a className='w-10 h-10 mx-1.5 rounded-full border-1 border-indigo-600 bg-[#f29595]'>
-							<Image src={instagram} alt='instagram' />
+						<a className='w-10 h-10 mx-1.5 rounded-full pt-[7px] bg-[#f29595]'>
+							<Image src={face} alt='facebook' />
 						</a>
 					</Link>
 					<Link href='https://www.youtube.com/c/ForeverLissOficial'>
-						<a className='w-10 h-10 mx-1.5 rounded-full border-1 border-indigo-600 bg-[#f29595]'>
-							<Image src={youtube} alt='youtube' />
+						<a className='w-10 h-10 mx-1.5 rounded-full pl-[3px] bg-[#f29595]'>
+							<Image src={yt} alt='youtube' />
 						</a>
 					</Link>
 					<Link href='https://www.tiktok.com/@foreverlissprofessional'>
