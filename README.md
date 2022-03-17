@@ -10,10 +10,8 @@ Este projeto tinha como objetivo de avaliar os conhecimentos técnicos de acordo
 ● Conhecimentos sobre HTML5, CSS + SASS, Javascript, ReactJS, Bootstrap e integração de API.
 
 # 🎨 Layout Figma
+![figma](https://user-images.githubusercontent.com/68671957/158898886-ecbeedd8-c1ab-42e3-9724-65e0abec8600.PNG)
 
-![]
-
-![]
 
 ## 👨🏾‍💻Desenvolvimento
 
