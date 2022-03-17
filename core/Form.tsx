@@ -30,12 +30,11 @@ const Form = () => {
 		alert('Pesquisa realizada com sucesso');
 	};
 
-	// italic pl-3 rounded-l-lg outline-none
 	return (
 		<>
 			<form className='flex' onSubmit={handleSubmit(onSubmit)}>
 				<input
-					className='w-full h-[52px] italic pl-3 rounded-l-lg outline-none'
+					className='w-full h-[52px] italic pl-3 rounded-l-lg outline-none text-[14px]'
 					{...register('text')}
 					placeholder='Qual o mimo de hoje para o seu anjinho?'
 				/>

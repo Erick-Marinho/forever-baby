@@ -30,26 +30,52 @@ const Debug: NextPage = () => {
 					</Link>
 				</div>
 				<div className='lg:w-[651px]'>{isDesktop ? <Form /> : null}</div>
-				<ul className='flex justify-around mr-6'>
-					<li className='w-10 h-10 rounded-full mr-6 bg-[#F5717F]'>
-						<a href='#' className=''>
-							<Image src={minhaConta} alt='minha conta' />
-						</a>
-						<a
-							href='#'
-							className='hidden lg:contents text-[10px] hover:text-cyan-500 duration-500'>
-							MINHA CONTA
-						</a>
+				<ul className='flex justify-around items-center mr-6'>
+					<li>
+						{/* <div className='border-2 border-black'>
+							<a href='#' className=''>
+								<Image src={minhaConta} alt='minha conta' />
+							</a>
+							<a
+								href='#'
+								className='hidden lg:contents text-[10px] hover:text-cyan-500 duration-500'>
+								MINHA CONTA
+							</a>
+						</div> */}
+						<div className='flex lg:flex flex-col items-center pt-4 lg:mr-6'>
+							<Link href='/'>
+								<a className='w-10 h-10 mx-1.5 rounded-full bg-[#F5717F]'>
+									<Image src={minhaConta} alt='minha conta' />
+								</a>
+							</Link>
+							<Link href='/'>
+								<a className='hidden lg:contents hover:text-cyan-500 duration-500 text-[10px] text-[#FFFFFF] w-[68px] h-[12px] pt-1'>
+									MINHA CONTA
+								</a>
+							</Link>
+						</div>
 					</li>
-					<li className='w-10 h-10 rounded-full bg-[#F5717F]'>
-						<a href='#' className=''>
+					<li>
+						<div className='flex mr-[-20px] lg:flex flex-col lg:items-center lg:mr-6 pt-4'>
+							<Link href='/'>
+								<a className='w-10 h-10 mx-1.5 rounded-full bg-[#F5717F]'>
+									<Image src={carrinho} alt='minha conta' />
+								</a>
+							</Link>
+							<Link href='/'>
+								<a className='hidden lg:contents hover:text-cyan-500 duration-500 text-[10px] text-[#FFFFFF] w-[68px] h-[12px] pt-1 ml-4'>
+									CARRINHO
+								</a>
+							</Link>
+						</div>
+						{/* <a href='#' className=''>
 							<Image src={carrinho} alt='carrinho' />
 						</a>
 						<a
 							href='#'
 							className='hidden lg:contents text-[10px] hover:text-cyan-500 duration-500'>
 							CARRINHO
-						</a>
+						</a> */}
 					</li>
 				</ul>
 			</nav>

@@ -40,19 +40,21 @@ const Newsletter: NextPage = () => {
 	return (
 		<>
 			<div className='flex flex-col text-center w-full h-48 bg-[#F5717F] pt-8 mt-8'>
-				<h2 className='text-[#FFFFFF] text-[22px]'>NEWSLETTER FOREVER BABY</h2>
-				<p className='text-[#FFFFFF] text-[14px]'>
+				<h2 className='text-[#FFFFFF] text-[22px] font-[Roboto] font-bold'>
+					NEWSLETTER FOREVER BABY
+				</h2>
+				<p className='text-[#FFFFFF] text-[14px] font-[Roboto] font-normal'>
 					Cadastre-se agora para não perder nenhuma promoção
 				</p>
 				<form
 					onSubmit={handleSubmit(onSubmit)}
 					className='flex items-center justify-center pt-4'>
 					<input
-						className='w-[550px] h-[52px] italic pl-3 rounded-l-lg outline-none'
+						className='w-[550px] h-[52px] italic pl-3 rounded-l-lg outline-none text-[14px]'
 						placeholder='Digite aqui o seu melhor e-mail'
 						{...register('email')}
 					/>
-					<button className='text-[#345C7D] bg-[#FFFFFF] h-[52px] w-[100px] text-[14px] rounded-r-lg'>
+					<button className='text-[#345C7D] font-[Roboto] font-bold bg-[#FFFFFF] h-[52px] w-[100px] text-[14px] rounded-r-lg pr-2'>
 						CADASTRAR
 					</button>
 					<p>{errors.email?.message}</p>

@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 
 const Copyright: NextPage = () => {
 	return (
-		<div className='w-full h-full flex justify-center bg-[#FFFFFF] py-6'>
+		<div className='w-full h-full flex justify-center bg-[#FFFFFF] py-6 font-[Roboto]'>
 			<div className='max-w-[808px] flex flex-col text-center bg-[#FFFFFF]'>
 				<p className='text-[#AAAAAA] text-xs'>2022 www.foreverliss.com.br</p>
 				<p className='text-[#AAAAAA] text-xs'>Todos os direitos reservados.</p>
