@@ -43,8 +43,8 @@ const Form = () => {
 					className='text-[#345C7D] bg-[#FFFFFF] font-[Robot] font-bold rounded-r-lg h-[52px] w-[100px]'>
 					BUSCAR
 				</button>
-				<p>{errors.text?.message}</p>
 			</form>
+			<span className='text-[red]'>{errors.text?.message}</span>
 		</>
 	);
 };

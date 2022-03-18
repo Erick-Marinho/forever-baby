@@ -100,7 +100,7 @@ const Cards: NextPage = () => {
 					return (
 						<div
 							key={index}
-							className='p-2 max-w-[190px] lg:mx-4 my-0 lg:max-w-[300px]'>
+							className='p-2 max-w-[190px] lg:mx-4 my-0 lg:p-0 lg:max-w-[300px]'>
 							<Card text={item.text} price={item.price} img={item.img} />
 						</div>
 					);

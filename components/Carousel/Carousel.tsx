@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import imagem3 from '../../assets/image3.jpeg';
-import imagem4 from '../../assets/image4.jpeg';
-import imagem5 from '../../assets/image5.jpeg';
-import imagem2 from '../../assets/imagem2.jpeg';
+import image1 from '../../assets/image1.jpeg';
+import image2 from '../../assets/image2.jpeg';
+import image3 from '../../assets/image3.jpeg';
+import image4 from '../../assets/image4.jpeg';
 
 const Carousel: NextPage = () => {
 	const settings = {
@@ -25,36 +25,16 @@ const Carousel: NextPage = () => {
 			<div className='bg-white w-full'>
 				<Slider {...settings}>
 					<div className='w-full h-96 relative'>
-						<Image
-							src={imagem2}
-							alt='imagens'
-							layout='fill'
-							objectFit='cover'
-						/>
+						<Image src={image1} alt='imagens' layout='fill' objectFit='cover' />
 					</div>
 					<div className='w-full h-96 relative'>
-						<Image
-							src={imagem3}
-							alt='imagens'
-							layout='fill'
-							objectFit='cover'
-						/>
+						<Image src={image2} alt='imagens' layout='fill' objectFit='cover' />
 					</div>
 					<div className='w-full h-96 relative'>
-						<Image
-							src={imagem4}
-							alt='imagens'
-							layout='fill'
-							objectFit='cover'
-						/>
+						<Image src={image3} alt='imagens' layout='fill' objectFit='cover' />
 					</div>
 					<div className='w-full h-96 relative'>
-						<Image
-							src={imagem5}
-							alt='imagens'
-							layout='fill'
-							objectFit='cover'
-						/>
+						<Image src={image4} alt='imagens' layout='fill' objectFit='cover' />
 					</div>
 				</Slider>
 			</div>
