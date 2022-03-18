@@ -8,7 +8,7 @@ import minhaConta from '../../assets/minhaConta.png';
 import Form from '../../core/Form';
 
 const Debug: NextPage = () => {
-	const [isDesktop, setDesktop] = useState();
+	const [isDesktop, setDesktop] = useState<Boolean>();
 
 	const updateMedia = () => {
 		setDesktop(window.innerWidth > 1024);
